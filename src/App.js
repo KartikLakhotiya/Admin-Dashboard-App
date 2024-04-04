@@ -4,6 +4,8 @@ import { FiSettings } from 'react-icons/fi'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 import './App.css'
+import LineChart from './componenets/Charts/LineChart';
+import Stacked from './componenets/Charts/Stacked';
 
 const App = () => {
     const activeMenu = false;
@@ -57,14 +59,14 @@ const App = () => {
                         <Route path='/color-picker' element=""/>
 
                         {/* Charts */}
-                        <Route path='/line' element=""/>
+                        <Route path='/line' element={<LineChart/>}/>
                         <Route path='/area' element=""/>
                         <Route path='/bar' element=""/>
                         <Route path='/pie' element=""/>
                         <Route path='/financial' element=""/>
                         <Route path='/color-mapping' element=""/>
                         <Route path='/pyramid' element=""/>
-                        <Route path='/stacked' element="E-Commerce"/>
+                        <Route path='/stacked' element={<Stacked/>}/>
 
 
 
