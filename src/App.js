@@ -2,7 +2,7 @@ import React,{ useEffect} from 'react';
 import { BrowserRouter as Router , Routes , Route} from 'react-router-dom';
 import { FiSettings } from 'react-icons/fi'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups';
-
+import { Navbar, Footer, sidebar, ThemeSettings } from './componenets';
 import './App.css'
 import LineChart from './componenets/Charts/LineChart';
 import Stacked from './componenets/Charts/Stacked';
